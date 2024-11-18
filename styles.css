@@ -189,3 +189,553 @@ main {
     border-radius: 20px;
     overflow: hidden;
 }
+
+.review {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.review::-webkit-scrollbar {
+    display: none;
+}
+
+.review figure {
+    border: 1px solid rgb(236, 236, 236);
+    padding: 20px 10px;
+    min-width: 200px;
+}
+
+.review figure img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.stars {
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.rating-count {
+    color: #000000;
+    font-size: 0.9em;
+}
+
+.rating-count,
+.stars {
+    margin: 0;
+}
+
+.category-cards {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0;
+}
+
+.category-card {
+    width: 32%;
+    margin: 10px 0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+.category-card img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.category-card:nth-child(4) {
+    width: 70%;
+}
+
+.category-card:nth-child(5) {
+    width: 28%;
+}
+
+
+.product-container {
+    padding: 10px;
+}
+
+.breadcrumb {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb i {
+    margin: 0 5px;
+    color: #2b2b2b;
+}
+
+.breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.product-detail {
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    max-height: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.product-card-title {
+    margin: 20px 0;
+}
+
+.product {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 90%;
+}
+
+.product-images {
+    width: 80%;
+    display: flex;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-image-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.product-image-items img {
+    width: 100px;
+    height: 29.3%;
+}
+
+.product .product-info {
+    overflow-y: auto;
+}
+
+.product .product-info::-webkit-scrollbar {
+    display: none;
+}
+
+.product .product-info h1 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.product .product-price {
+    font-size: 1.75rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.product .product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.select-size {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(221, 221, 221);
+}
+
+.select-size option {
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.product .buy-button {
+    padding: 0.75rem 3rem;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.product-specifications {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.toggle-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.toggle-content.expanded {
+    height: 100%;
+}
+
+.user-rating ul {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.related-product {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.related-products {
+    max-width: 100%;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 8px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.related-products::-webkit-scrollbar {
+    display: none;
+}
+
+.related-products .product {
+    display: block;
+    margin-right: 10px;
+}
+
+
+.related-product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.product-information {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.product-information h3,
+.product-information p {
+    font-size: 14px;
+    width: 50%;
+    margin: 0;
+}
+
+.product-information h3 {
+    font-size: 20px;
+    padding: 0;
+}
+
+.product-information p:not(.product-rating) {
+    text-align: right;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.checkout-container .shopping-bag,
+.checkout-container form,
+.checkout-container .delivery-options {
+    padding: 1rem;
+    margin: 2rem auto;
+    border: 1px solid #dedede;
+}
+
+fieldset {
+    border: none;
+}
+
+.checkout-container label {
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.checkout-container input {
+    margin: 10px 0;
+}
+
+input[type="text"],
+.checkout-container button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="text"] {
+    border: 1px solid #d1d5db;
+}
+
+.checkout-container button {
+    background-color: #000000;
+    color: white;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+    align-self: flex-end;
+    border: none;
+}
+
+.page-header {
+    text-align: center;
+    background: #e5e7eb;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+}
+
+.shopping-bag h2,
+.checkout-container form h2 {
+    font-size: 1.75rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+}
+
+.product-bag-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product-bag-card img {
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+}
+
+.product-bag-card ul {
+    display: block;
+    display: flex;
+    list-style: none;
+}
+
+.product-bag-card ul li {
+    margin-right: 10px;
+}
+
+.product-bag-card ul li select {
+    padding: 10px 5px;
+}
+
+
+.product-info h3 {
+    font-size: 1.2rem;
+    color: #111827;
+}
+
+.product-info p {
+    color: #6b7280;
+
+}
+
+.personal-data-row,
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    gap: 10px
+}
+
+.personal-data-row input,
+.card-row input {
+    width: 100%;
+}
+
+.personal-data-row p,
+.card-row p {
+    width: 50%;
+    margin: 0;
+}
+
+.cancel-order {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cancel-order a {
+    width: 100px;
+    max-width: 100px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+}
+
+.delivery-options {
+    border: none;
+}
+
+
+.delivery-list {
+    display: block;
+}
+
+.delivery-item {
+    list-style: none;
+    border: 1px solid #d1d1d1;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.delivery-fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-label {
+    display: flex;
+    align-items: center;
+}
+
+.delivery-label input {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.delivery-time {
+    color: #ababab;
+}
+
+.delivery-label,
+.delivery-details {
+    max-width: 80%;
+}
+
+
+.payment-form .total-price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.consent {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.consent label {
+    text-align: center;
+    display: flex;
+    margin: 10px 0;
+}
+
+.consent label input {
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    text-align: left;
+    border-top: 1px solid rgb(196, 196, 196);
+    padding: 40px 0;
+}
+
+footer section {
+    flex: 1;
+    padding: 5px 10px;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color: #575757;
+    margin: 0;
+}
+
+footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: rgb(123, 123, 123);
+}
+
+footer p {
+    color: #ccc;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #000000;
+}

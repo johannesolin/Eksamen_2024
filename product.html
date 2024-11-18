@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktside</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="logo" href="index.html">
+            <h1>DineBriller.<span>no</span></h1>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html#popular-products">Produkter</a>
+            <a href="index.html#popular-categories">Kategorier</a>
+            <a href="index.html#reviews">Anmeldelser</a>
+            <a href="checkout.html">Kontakt</a>
+        </nav>
+
+        <label class="search-box">
+            <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+
+        <div class="header-buttons">
+            <a href="./checkout.html" class="shopping-cart" aria-label="Go to checkout">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <span class="hamburger" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span class="close-btn" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+    </header>
+
+    <main class="product-container">
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <a href="index.html">Hjem</a>
+            <i class="fa-solid fa-greater-than"></i>
+            <a href="index.html#popular-products">Produkter</a>
+            <i class="fa-solid fa-greater-than"></i>
+            Zign  UNISEX - Solbriller
+        </nav>
+
+        <section class="product-detail">
+            <h2 class="product-card-title">Solbriller</h2>
+            <div class="product">
+                <div class="product-images">
+                    <div class="product-image-items">
+                        <img src="img/zign-briller.png" alt="Product Image">
+                        <img src="img/zign-briller.png" alt="Product Image">
+                        <img src="img/zign-briller.png" alt="Product Image">
+                    </div>
+                    <figure class="product-image">
+                        <img src="img/zign-briller.png" alt="Product Image">
+                    </figure>
+                </div>
+                <section class="product-info">
+                    <h2>Zign  UNISEX - Solbriller</h2>
+                    <p class="product-price">200 NOK</p>
+                    <p class="product-description">Resirkulert materiale </p>
+                        Materiale: 100% resirkulert materiale
+                    <p class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(31)</span>
+                    </p>
+                    <select aria-label="Choose a size" name="select-size" id="select-size" class="select-size">
+                        <option value="lorem">Sort</option>
+                        <option value="lorem">Beige</option>
+                        <option value="lorem">Brun</option>
+                        <option value="lorem">Hvit</option>
+                    </select>
+                    <button class="buy-button">Legg i Handlekurv</button>
+                    <ul class="product-specifications">
+                        <li>
+                            <h3 class="toggle-header">100 Dager Åpent Kjøp<i class="fas fa-plus"></i></h3>
+                            <p class="toggle-content">Hos oss har du 100 dagers angrerettt, du har altså 100 dager på deg om brillene ikke skulle
+                                falle i smak.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="toggle-header">Produktdetaljer<i class="fas fa-plus"></i></h3>
+                            <p class="toggle-content">
+                                Brilleform: 
+                                Cat eye
+                                Mønster: 
+                                Ensfarget
+                                Filterkategori: 
+                                Mørke (kategori 3)
+                                UV-beskyttelse: 
+                                Ja
+                                Brilleetui: 
+                                Pose med snøring
+                                Artikkelnummer: 
+                                ZI154K03M-Q11</p>
+                        </li>
+                        <li>
+                            <h3 class="toggle-header">Passform<i class="fas fa-plus"></i></h3>
+                            <p class="toggle-content">
+                                Bredde: 
+                                14.6 cm i størrelse One Size
+                                Bøylelengde: 
+                                14.7 cm i størrelse One Size
+                                Nesebor: 
+                                1.2 cm i størrelse One Size
+                                Linsehøyde: 
+                                3.9 cm
+                                Linsebredde: 
+                                5 cm
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="toggle-header">Anmeldelser<span class="stars">★★★★☆</span></h3>
+                            <article class="toggle-content user-rating">
+                                <ul>
+                                    <li>
+                                        <h4>Ola Normann</h4>
+                                        <span class="stars">★★★★☆</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <section class="related-product">
+            <h2>Relaterte Produkter</h2>
+            <div class="related-products">
+                <figure class="product">
+                    <img src="img/zign-briller.png" alt="Product 1">
+                    <article class="product-information">
+                        <h3 class="product-name">Zign</h3>
+                        <p class="product-price">200 NOK</p>
+                        <p class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(31)</span>
+                        </p>
+                    </article>
+                </figure>
+                <figure class="product">
+                    <img src="img/Even&Odd-briller.png" alt="Product 2">
+                    <article class="product-information">
+                        <h3 class="product-name">Even&Odd</h3>
+                        <p class="product-price">200 NOK</p>
+                        <p class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(43)</span>
+                        </p>
+                    </article>
+                </figure>
+                <figure class="product">
+                    <img src="img/Only&Sons.png" alt="Product 3">
+                    <article class="product-information">
+                        <h3 class="product-name">Only&Sons</h3>
+                        <p class="product-price">200 NOK</p>
+                        <p class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(65)</span>
+                        </p>
+                    </article>
+                </figure>
+                <figure class="product">
+                    <img src="img/Even&Odd1.png" alt="Product 4">
+                    <article class="product-information">
+                        <h3 class="product-name">Even&Odd</h3>
+                        <p class="product-price">200 NOK</p>
+                        <p class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(57)</span>
+                        </p>
+                    </article>
+                </figure>
+                <figure class="product">
+                    <img src="img/Jack&Jones.png" alt="Product 5">
+                    <article class="product-information">
+                        <h3 class="product-name">Jack&Jones</h3>
+                        <p class="product-price">200 NOK</p>
+                        <p class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(27)</span>
+                        </p>
+                    </article>
+                </figure>
+                <figure class="product">
+                    <img src="img/Even&Odd2.png" alt="Product 6">
+                    <article class="product-information">
+                        <h3 class="product-name">Even&Odd</h3>
+                        <p class="product-price">200 NOK</p>
+                        <p class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(95)</span>
+                        </p>
+                    </article>
+                </figure>
+            </div>
+        </section>
+
+        <a href="#" id="go-to-top">Til Toppen</a>
+
+    </main>
+
+    <footer>
+        <section class="logo-preamble">
+            <h2>DineBriller.<span>no</span></h2>
+            <p>Solbriller som matcher din stil, ditt syn, og din hverdag!</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h3>Kontakt</h3>
+            <p>HØGSKOLEN I ØSTFOLD<br>
+                B R A Veien 4, 1757 Halden<br>
+                Telefon: 69 60 80 00<br>
+                Epost: serivcetorget@hiof.no</p>
+        </section>
+
+        <section class="shortcuts">
+            <h3>Snarveier</h3>
+            <ul>
+                <li><a href="#about">Om Oss</a></li>
+                <li><a href="#services">Tjenester</a></li>
+                <li><a href="#contact">Kontakt Oss</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </section>
+
+        <section class="social-media">
+            <h3>Sosiale Medier</h3>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+            </ul>
+        </section>
+
+    </footer>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
