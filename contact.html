@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanlekurv</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <a class="logo" href="index.html"></a>
+            <h1>DineBriller.<span>no</span></h1>
+        <nav class="nav-links">
+            <a href="index.html#popular-products">Produkter</a>
+            <a href="index.html#popular-categories">Kategorier</a>
+            <a href="index.html#reviews">Anmeldelser</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <label class="search-box">
+            <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+
+        <div class="header-buttons">
+            <a href="./checkout.html" class="shopping-cart" aria-label="Go to checkout">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <span class="hamburger" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span class="close-btn" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <header class="page-header">
+            <h1>Kontaktside</h1>
+        </header>
+
+        <form class="personal-data-form">
+            <h2>Meld deg på vårt nyhetsbrev</h2>
+            <fieldset class="personal-data-row">
+                <p><label>Fornavn<input type="text" placeholder="Ola"></label></p>
+                <p><label>Etternavn<input type="text" placeholder="Normann"></label></p>
+            </fieldset>
+            <label>Epost<input type="text" placeholder="feks@hiof.no"></label>
+
+            <button type="submit">Meld deg på!</button>
+        </form>
+
+        <section class="delivery-options">
+            <form class="personal-data-form">
+                <h2>Meld deg på vårt nyhetsbrev</h2>
+                <fieldset class="personal-data-row">
+                    <p><label>Epost<input type="text" placeholder="feks@hiof.no"></label></p>
+                    <p><label>Emne<input type="text" placeholder="Retur"></label></p>
+                </fieldset>
+                <label>Skriv kort hva det gjelder<input type="text" placeholder="Jeg ønsker å returnere en ordre..."></label>
+    
+                <button type="submit">Send Inn</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="logo-preamble">
+            <h2>DineBriller.<span>no</span></h2>
+            <p>Solbriller som matcher din stil, ditt syn, og din hverdag!</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h3>Kontakt</h3>
+            <p>HØGSKOLEN I ØSTFOLD<br>
+                B R A Veien 4, 1757 Halden<br>
+                Telefon: 69 60 80 00<br>
+                Epost: serivcetorget@hiof.no</p>
+        </section>
+
+        <section class="shortcuts">
+            <h3>Snarveier</h3>
+            <ul>
+                <li><a href="#about">Om Oss</a></li>
+                <li><a href="#services">Tjenester</a></li>
+                <li><a href="#contact">Kontakt Oss</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </section>
+
+        <section class="social-media">
+            <h3>Sosiale Medier</h3>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://wwwa.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+            </ul>
+        </section>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
