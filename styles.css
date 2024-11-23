@@ -346,6 +346,7 @@ main {
     height: 29.3%;
 }
 
+
 .product .product-info {
     overflow-y: auto;
 }
@@ -740,7 +741,32 @@ footer ul li a:hover {
     color: #000000;
 }
 
-
+#go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .skip-to-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .skip-to-content:focus {
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+  }
 
 @media (max-width: 840px) {
     .search-box input {
