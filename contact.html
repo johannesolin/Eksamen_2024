@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanlekurv</title>
+    <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
+    <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
+    <meta name="author" content="DineBriller.no"> 
+    <title>Kontakt</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -14,40 +17,43 @@
 
 <body>
     <header class="main-header">
-        <a class="logo" href="index.html">
+        <!-- Lagt til aria-label for bedre tilgjengelighet -->
+        <a class="logo" href="index.html" area-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
         </a>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primær navigasjon">
             <a href="index.html#popular-products">Produkter</a>
             <a href="index.html#popular-categories">Kategorier</a>
             <a href="index.html#reviews">Anmeldelser</a>
             <a href="contact.html">Kontakt</a>
         </nav>
 
-        <label class="search-box">
-            <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- Lagt til aria-label på søkeboksen -->
+        <label class="search-box" area-label="Søk etter produkter"></i>
         </label>
 
         <div class="header-buttons">
-            <a href="./checkout.html" class="shopping-cart" aria-label="Go to checkout">
+        <!-- Lagt til aria-label for spesifikke knapper -->
+            <a href="./checkout.html" class="shopping-cart" aria-label="Gå til handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <span class="hamburger" onclick="openMenu()">
+            <span class="hamburger" onclick="openMenu()" area-label="Åpne meny">
                 <i class="fas fa-bars"></i>
             </span>
-            <span class="close-btn" onclick="closeMenu()">
+            <span class="close-btn" onclick="closeMenu()" area-label="Lukke meny">
                 <i class="fa-solid fa-xmark"></i>
             </span>
         </div>
     </header>
 
+        <!--Lagt til Area attributtert for SEO i main-->
     <main class="checkout-container">
         <header class="page-header">
             <h1>Kontaktside</h1>
         </header>
 
-        <form class="personal-data-form">
+        <!--Area atributter for nyhetsbrev / persondata-->
+        <form class="personal-data-form" area-label="Nyhetsbrev">
             <h2>Meld deg på vårt nyhetsbrev</h2>
             <fieldset class="personal-data-row">
                 <p><label>Fornavn<input type="text" placeholder="Ola"></label></p>
@@ -58,9 +64,10 @@
             <button type="submit">Meld deg på!</button>
         </form>
 
-        <section class="delivery-options">
+        <!--Area attributter for kontakt oss-->
+        <section class="delivery-options" area-label="Persondata-kontakt-oss">
             <form class="personal-data-form">
-                <h2>Meld deg på vårt nyhetsbrev</h2>
+                <h2>Kom i kontakt med oss</h2>
                 <fieldset class="personal-data-row">
                     <p><label>Epost<input type="text" placeholder="feks@hiof.no"></label></p>
                     <p><label>Emne<input type="text" placeholder="Retur"></label></p>
@@ -73,16 +80,17 @@
 
         <a href="#" id="go-to-top">Til Toppen</a>
         <a href="index.html#popular-products" class="skip-to-content" tabindex="-1">Skip til Innhold</a>
-        
+
     </main>
 
     <footer>
-        <section class="logo-preamble">
+        <!-- Resten av footer med tilgjengelighetsforbedringer -->
+        <section class="logo-preamble" aria-labelledby="footer-logo">
             <h2>DineBriller.<span>no</span></h2>
             <p>Solbriller som matcher din stil, ditt syn, og din hverdag!</p>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" aria-labelledby="footer-contact">
             <h3>Kontakt</h3>
             <p>HØGSKOLEN I ØSTFOLD<br>
                 B R A Veien 4, 1757 Halden<br>
@@ -90,23 +98,23 @@
                 Epost: serivcetorget@hiof.no</p>
         </section>
 
-        <section class="shortcuts">
+        <section class="shortcuts" aria-labelledby="footer-snarveier">
             <h3>Snarveier</h3>
             <ul>
-                <li><a href="#about">Om Oss</a></li>
-                <li><a href="#services">Tjenester</a></li>
-                <li><a href="#contact">Kontakt Oss</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about" aria-label="Gå til Om Oss">Om Oss</a></li>
+                <li><a href="#services" aria-label="Gå til Tjenester">Tjenester</a></li>
+                <li><a href="#contact" aria-label="Gå til Kontakt Oss">Kontakt Oss</a></li>
+                <li><a href="#blog" aria-label="Gå til Blogg">Blog</a></li>
             </ul>
         </section>
 
-        <section class="social-media">
+        <section class="social-media" aria-labelledby="footer-sosiale-medier">
             <h3>Sosiale Medier</h3>
             <ul>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://wwwa.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Instagram-side">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Facebook-side">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår LinkedIn-side">LinkedIn</a></li>
+                <li><a href="https://wwwa.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Pinterest-side">Pinterest</a></li>
             </ul>
         </section>
 

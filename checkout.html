@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
+<!--Metadata som forbedrer tilgjenlighetsfunksjoner-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
+    <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
+    <meta name="author" content="DineBriller.no">    
     <title>Hanlekurv</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,41 +17,45 @@
 </head>
 
 <body>
+    <!-- Lagt til aria-label for bedre tilgjengelighet -->
     <header class="main-header">
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.html" aria-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
         </a>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primær navigasjon">
             <a href="index.html#popular-products">Produkter</a>
             <a href="index.html#popular-categories">Kategorier</a>
             <a href="index.html#reviews">Anmeldelser</a>
             <a href="contact.html">Kontakt</a>
         </nav>
 
-        <label class="search-box">
+        <!-- Lagt til aria-label på søkeboksen -->
+        <label class="search-box" aria-label="Søk etter Produkter">
             <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
             <i class="fa-solid fa-magnifying-glass"></i>
         </label>
 
+        <!-- Lagt til aria-label for spesifikke knapper -->
         <div class="header-buttons">
-            <a href="./checkout.html" class="shopping-cart" aria-label="Go to checkout">
+            <a href="./checkout.html" class="shopping-cart" aria-label="Gå til Handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <span class="hamburger" onclick="openMenu()">
+            <span class="hamburger" onclick="openMenu()" aria-label="Åpne meny">
                 <i class="fas fa-bars"></i>
             </span>
-            <span class="close-btn" onclick="closeMenu()">
+            <span class="close-btn" onclick="closeMenu()" aria-label="Lukke meny">
                 <i class="fa-solid fa-xmark"></i>
             </span>
         </div>
     </header>
 
+    <!--Lagt til Area attributtert for SEO i main-->
     <main class="checkout-container">
         <header class="page-header">
             <h1>Kasse</h1>
         </header>
 
-        <section class="shopping-bag">
+        <section class="shopping-bag" aria-labelledby="Handlekurv-side">
             <h2>1. SHOPPINGBAGEN DIN</h2>
             <div class="product-bag-items">
                 <article class="product-bag-card">
@@ -59,7 +67,7 @@
                         <ul class="size-selection">
                             <li>
                                 <label for="choose-size-1" class="choose-size">Brilleetui</label>
-                                <select name="choose-size" id="choose-size-1">
+                                <select name="choose-size" id="choose-size-1" aria-label="Velg størrelse på etui">
                                     <option value="small">Lite</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Stort</option>
@@ -67,7 +75,7 @@
                             </li>
                             <li>
                                 <label for="choose-color-1" class="choose-color">Farge</label>
-                                <select name="choose-color" id="choose-color-1">
+                                <select name="choose-color" id="choose-color-1" aria-label="Velg farge">
                                     <option value="red">Sort</option>
                                     <option value="blue">Brun</option>
                                     <option value="green">Beige</option>
@@ -85,7 +93,7 @@
                         <ul class="size-selection">
                             <li>
                                 <label for="choose-size-2" class="choose-size">Brilleetui</label>
-                                <select name="choose-size" id="choose-size-2">
+                                <select name="choose-size" id="choose-size-2" aria-label="Velg størrelse på etui">
                                     <option value="small">Lite</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Stort</option>
@@ -93,7 +101,7 @@
                             </li>
                             <li>
                                 <label for="choose-color-2" class="choose-color">Farge</label>
-                                <select name="choose-color" id="choose-color-2">
+                                <select name="choose-color" id="choose-color-2" aria-label="Velg farge">
                                     <option value="red">Sort</option>
                                     <option value="blue">Brun</option>
                                     <option value="green">Beige</option>
@@ -105,7 +113,8 @@
             </div>
         </section>
 
-        <form class="personal-data-form">
+        <!--Area atributter for personopplysninger-->
+        <form class="personal-data-form" aria-labelledby="Personopplysninger">
             <h2>2. DINE OPPLYSNINGER</h2>
             <fieldset class="personal-data-row">
                 <p><label>Fornavn<input type="text" placeholder="Ola"></label></p>
@@ -122,7 +131,8 @@
             </span>
         </form>
 
-        <section class="delivery-options">
+        <!--Area attributter for leveringsalternativer-->
+        <section class="delivery-options" aria-labelledby="delivery-options-title">
             <h2 class="delivery-title">3. LEVERINGSALTERNATIV</h2>
             <ul class="delivery-list">
                 <li class="delivery-item">
@@ -175,7 +185,9 @@
                 </li>
             </ul>
         </section>
-        <form class="payment-form">
+
+        <!--Area attributter for betalingsinformasjon-->
+        <form class="payment-form" aria-label="payment-title" >
             <h2>BETALING</h2>
             <label>Kortnummer <input type="text" placeholder="342342****4435"></label>
             <fieldset class="card-row">
@@ -199,12 +211,13 @@
     </main>
 
     <footer>
-        <section class="logo-preamble">
+        <!-- Resten av footer med tilgjengelighetsforbedringer -->
+        <section class="logo-preamble" aria-labelledby="footer-logo">
             <h2>DineBriller.<span>no</span></h2>
             <p>Solbriller som matcher din stil, ditt syn, og din hverdag!</p>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" aria-labelledby="footer-contact">
             <h3>Kontakt</h3>
             <p>HØGSKOLEN I ØSTFOLD<br>
                 B R A Veien 4, 1757 Halden<br>
@@ -212,23 +225,23 @@
                 Epost: serivcetorget@hiof.no</p>
         </section>
 
-        <section class="shortcuts">
+        <section class="shortcuts" aria-label="footer-snarveier">
             <h3>Snarveier</h3>
             <ul>
-                <li><a href="#about">Om Oss</a></li>
-                <li><a href="#services">Tjenester</a></li>
-                <li><a href="#contact">Kontakt Oss</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about" aria-label="Gå til Om Oss">Om Oss</a></li>
+                <li><a href="#services" aria-label="Gå til Tjenester">Tjenester</a></li>
+                <li><a href="#contact" aria-label="Gå til Kontakt Oss">Kontakt Oss</a></li>
+                <li><a href="#blog" aria-label="Gå til Blogg">Blog</a></li>
             </ul>
         </section>
 
         <section class="social-media">
             <h3>Sosiale Medier</h3>
             <ul>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Instagram-side">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Facebook-side">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår LinkedIn">LinkedIn</a></li>
+                <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Pinterest">Pinterest</a></li>
             </ul>
         </section>
 

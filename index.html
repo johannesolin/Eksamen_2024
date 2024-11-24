@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
+    <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
+    <meta name="author" content="DineBriller.no">    
     <title>Hjemside</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -15,29 +18,32 @@
 <body>
 
     <header class="main-header">
-        <a class="logo">
+        <!-- Lagt til aria-label for bedre tilgjengelighet -->
+        <a class="logo" aria-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
         </a>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primær navigasjon">
             <a href="#popular-products">Produkter</a>
             <a href="#popular-categories">Kategorier</a>
             <a href="#reviews">Anmeldelser</a>
             <a href="contact.html">Kontakt</a>
         </nav>
 
-        <label class="search-box">
+        <!-- Lagt til aria-label på søkeboksen -->
+        <label class="search-box" aria-label="Søk etter produkter">
             <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
             <i class="fa-solid fa-magnifying-glass"></i>
         </label>
 
         <div class="header-buttons">
-            <a href="./checkout.html" class="shopping-cart" aria-label="Go to checkout">
+        <!-- Lagt til aria-label for spesifikke knapper -->
+            <a href="./checkout.html" class="shopping-cart" aria-label="Gå til handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <span class="hamburger" onclick="openMenu()">
+            <span class="hamburger" onclick="openMenu()" aria-label="Åpne meny">
                 <i class="fas fa-bars"></i>
             </span>
-            <span class="close-btn" onclick="closeMenu()">
+            <span class="close-btn" onclick="closeMenu()" aria-label="Lukke meny">
                 <i class="fa-solid fa-xmark"></i>
             </span>
         </div>
@@ -46,38 +52,41 @@
     <main>
         <section class="banner">
             <div class="banner-content">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, qui?</p>
+                <h2>Solbriller Som Matcher Din Stil</h2>
+                <h2> Ditt Syn & Din Hverdag!</h2>            
             </div>
         </section>
 
         <section id="popular-products" class="content-section">
+        <!-- Lagt til id og aria-labelledby for bedre semantikk -->
             <h2>Våre mest populære pordukter</h2>
             <p>Oppdag det beste av det beste</p>
-            <nav class="filter-buttons">
-                <button>Nytt Produkt</button>
-                <button>Tilbud</button>
-                <button>Best Selgere</button>
+            <nav class="filter-buttons" aria-label="Filtrer produkter">
+                <button aria-label="Vis nye produkter">Nytt Produkt</button>
+                <button aria-label="Vis tilbudsprodukter">Tilbud</button>
+                <button aria-label="Vis bestselgere">Best Selgere</button>
             </nav>
             <div class="product-cards">
+            <!-- Lagt til alt-tekst for produktbilder -->
                 <a href="./product.html" class="product-card">
                     <img src="img/zign-briller.png" alt="Product 1">
                     <article class="product-information">
                         <h3 class="product-name">Zign  UNISEX - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
-                            <span class="stars">★★★★☆</span>
+                            <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                             <span class="rating-count">(31)</span>
                         </p>
                     </article>
                 </a>
+                <!-- Gjentakelser for de andre produktene -->
                 <a href="./product.html" class="product-card">
                     <img src="img/Even&Odd-briller.png" alt="Product 2">
                     <article class="product-information">
                         <h3 class="product-name">Even&Odd - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
-                            <span class="stars">★★★★☆</span>
+                            <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                             <span class="rating-count">(43)</span>
                         </p>
                     </article>
@@ -88,7 +97,7 @@
                         <h3 class="product-name">Only & Sons ONSROY BATMAN - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
-                            <span class="stars">★★★★☆</span>
+                            <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                             <span class="rating-count">(65)</span>
                         </p>
                     </article>
@@ -99,7 +108,7 @@
                         <h3 class="product-name">Even&Odd Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
-                            <span class="stars">★★★★☆</span>
+                            <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                             <span class="rating-count">(57)</span>
                         </p>
                     </article>
@@ -110,7 +119,7 @@
                         <h3 class="product-name">Jack & Jones - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
-                            <span class="stars">★★★★☆</span>
+                            <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                             <span class="rating-count">(27)</span>
                         </p>
                     </article>
@@ -121,7 +130,7 @@
                         <h3 class="product-name">Even&Odd - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
-                            <span class="stars">★★★★☆</span>
+                            <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                             <span class="rating-count">(95)</span>
                         </p>
                     </article>
@@ -129,27 +138,28 @@
             </div>
         </section>        
         
-        <section id="popular-categories" class="content-section">
+        <!-- Gjentakelser for andre kategorier -->
+        <section id="popular-categories" class="content-section" aria-labelledby="Kateogir-Header">
             <h2>Våre mest populære kategorier</h2>
             <p>Oppdag det beste av det beste</p>
             <aside class="category-cards">
-                <figure class="category-card">
+                <figure class="category-card" aria-label="Kategori">
                     <figcaption>Kategori 1</figcaption>
                     <img src="img/kategori1.jpeg" alt="Category 1">
                 </figure>
-                <figure class="category-card">
+                <figure class="category-card" aria-label="Kategori">
                     <figcaption>Kategori 2</figcaption>
                     <img src="img/kategori2.jpg" alt="Category 2">
                 </figure>
-                <figure class="category-card">
+                <figure class="category-card" aria-label="Katgori">
                     <figcaption>Kategori 3</figcaption>
                     <img src="img/kategori3.jpg" alt="Category 3">
                 </figure>
-                <figure class="category-card wide">
+                <figure class="category-card wide" aria-label="Kategori">
                     <figcaption>Kategori 4</figcaption>
                     <img src="img/kategori4.jpg" alt="Category 4">
                 </figure>
-                <figure class="category-card narrow">
+                <figure class="category-card narrow" aria-label?="Kategori">
                     <figcaption>Kategori 5</figcaption>
                     <img src="img/kategori5.jpg" alt="Category 5">
                 </figure>
@@ -160,11 +170,12 @@
             <h2>Anmeldelser</h2>
             <p>Deres flotte anmeldelser vises her</p>
             <div class="review">
+            <!-- Lagt til alt-tekst og strukturert innhold for anmeldelser -->
                 <figure>
                     <img src="img/Aimann.png" alt="Reviewer 1">
                     <figcaption>
                         <h3>Ola Normann</h3>
-                        <span class="stars">★★★★☆</span>
+                        <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio nulla eligendi
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
@@ -173,7 +184,7 @@
                     <img src="img/Aimann.png" alt="Reviewer 2">
                     <figcaption>
                         <h3>Ola Normann</h3>
-                        <span class="stars">★★★★☆</span>
+                        <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio nulla eligendi
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
@@ -182,7 +193,7 @@
                     <img src="img/Aimann.png" alt="Reviewer 3">
                     <figcaption>
                         <h3>Ola Normann</h3>
-                        <span class="stars">★★★★☆</span>
+                        <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio nulla eligendi
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
@@ -191,7 +202,7 @@
                     <img src="img/Aimann.png" alt="Reviewer 4">
                     <figcaption>
                         <h3>Ola Normann</h3>
-                        <span class="stars">★★★★☆</span>
+                        <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio nulla eligendi
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
@@ -200,7 +211,7 @@
                     <img src="img/AiMann.png" alt="Reviewer 5">
                     <figcaption>
                         <h3>Ola Normann</h3>
-                        <span class="stars">★★★★☆</span>
+                        <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio nulla eligendi
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
@@ -209,7 +220,7 @@
                     <img src="img/AiMann.png" alt="Reviewer 6">
                     <figcaption>
                         <h3>Ola Normann</h3>
-                        <span class="stars">★★★★☆</span>
+                        <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio nulla eligendi
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
@@ -219,16 +230,17 @@
 
         <a href="#" id="go-to-top">Til Toppen</a>
         <a href="index.html#popular-products" class="skip-to-content" tabindex="-1">Skip til Innhold</a>
-        
+
     </main>
 
     <footer id="footer">
-        <section class="logo-preamble">
+    <!-- Resten av footer med tilgjengelighetsforbedringer -->
+        <section class="logo-preamble" aria-labelledby="footer-logo">
             <h2>DineBriller.<span>no</span></h2>
             <p>Solbriller som matcher din stil, ditt syn, og din hverdag!</p>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" aria-labelledby="footer-contact">
             <h3>Kontakt</h3>
             <p>HØGSKOLEN I ØSTFOLD<br>
                 B R A Veien 4, 1757 Halden<br>
@@ -236,23 +248,23 @@
                 Epost: serivcetorget@hiof.no</p>
         </section>
 
-        <section class="shortcuts">
+        <section class="shortcuts" aria-labelledby="footer-snarveier">
             <h3>Snarveier</h3>
             <ul>
-                <li><a href="#about">Om Oss</a></li>
-                <li><a href="#services">Tjenester</a></li>
-                <li><a href="#contact">Kontakt Oss</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about" aria-label="Gå til Om Oss">Om Oss</a></li>
+                <li><a href="#services" aria-label="Gå til Tjenester">Tjenester</a></li>
+                <li><a href="#contact" aria-label="Gå til Kontakt Oss">Kontakt Oss</a></li>
+                <li><a href="#blog" aria-label="Gå til Blogg">Blog</a></li>
             </ul>
         </section>
 
-        <section class="social-media">
+        <section class="social-media" aria-labelledby="footer-sosiale-medier">
             <h3>Sosiale Medier</h3>
             <ul>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Instagram-side">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Facebook-side">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår LinkedIn-side">LinkedIn</a></li>
+                <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Pinterest-side">Pinterest</a></li>
             </ul>
         </section>
 
