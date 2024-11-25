@@ -58,7 +58,7 @@
         </section>
 
         <section id="popular-products" class="content-section">
-        <!-- Lagt til id og aria-labelledby for bedre semantikk -->
+        <!-- Lagt til aria-labelledby/label for bedre semantikk -->
             <h2>Våre mest populære pordukter</h2>
             <p>Oppdag det beste av det beste</p>
             <nav class="filter-buttons" aria-label="Filtrer produkter">
@@ -67,11 +67,11 @@
                 <button aria-label="Vis bestselgere">Best Selgere</button>
             </nav>
             <div class="product-cards">
-            <!-- Lagt til alt-tekst for produktbilder -->
+            <!-- Lagt til area-labels for produktbilder -->
                 <a href="./product.html" class="product-card">
-                    <img src="img/zign-briller.png" alt="Product 1">
+                    <img src="img/zign-briller.png" alt="Product 1" area-label="Bildet til første produkt">
                     <article class="product-information">
-                        <h3 class="product-name">Zign  UNISEX - Solbriller</h3>
+                        <h3 class="product-name" area-label="Produktnavn">Zign  UNISEX - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -79,11 +79,10 @@
                         </p>
                     </article>
                 </a>
-                <!-- Gjentakelser for de andre produktene -->
                 <a href="./product.html" class="product-card">
-                    <img src="img/Even&Odd-briller.png" alt="Product 2">
+                    <img src="img/Even&Odd-briller.png" alt="Product 2" area-label="Bildet til andre produkt">
                     <article class="product-information">
-                        <h3 class="product-name">Even&Odd - Solbriller</h3>
+                        <h3 class="product-name" area-label="Produktnavn til produkt nr.2">Even&Odd - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -92,9 +91,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Only&Sons.png" alt="Product 3">
+                    <img src="img/Only&Sons.png" alt="Product 3" area-label="Bildet til tredje produkt">
                     <article class="product-information">
-                        <h3 class="product-name">Only & Sons ONSROY BATMAN - Solbriller</h3>
+                        <h3 class="product-name" area-label="Produktnavn til produkt nr.3">Only & Sons ONSROY BATMAN - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -103,9 +102,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Even&Odd1.png" alt="Product 4">
+                    <img src="img/Even&Odd1.png" alt="Product 4" area-label="Bildet til fjerde produkt">
                     <article class="product-information">
-                        <h3 class="product-name">Even&Odd Solbriller</h3>
+                        <h3 class="product-name" area-label="Produktnavn til produkt nr.4">Even&Odd Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -114,9 +113,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Jack&Jones.png" alt="Product 5">
+                    <img src="img/Jack&Jones.png" alt="Product 5" area-label="Bildet til femte produkt">
                     <article class="product-information">
-                        <h3 class="product-name">Jack & Jones - Solbriller</h3>
+                        <h3 class="product-name" area-label="Produktnavn til produkt nr.5">Jack & Jones - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -125,9 +124,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Even&Odd2.png" alt="Product 6">
+                    <img src="img/Even&Odd2.png" alt="Product 6" area-label="Bildet til siste produkt">
                     <article class="product-information">
-                        <h3 class="product-name">Even&Odd - Solbriller</h3>
+                        <h3 class="product-name" area-label="PRoduktnavn til siste produkt">Even&Odd - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -170,8 +169,8 @@
             <h2>Anmeldelser</h2>
             <p>Deres flotte anmeldelser vises her</p>
             <div class="review">
-            <!-- Lagt til alt-tekst og strukturert innhold for anmeldelser -->
-                <figure>
+            <!-- Lagt til area og strukturert innhold for anmeldelser -->
+                <figure area-label="Første kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 1">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -180,7 +179,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure area-label="Andre kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 2">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -189,7 +188,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure area-label="Tredje kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 3">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -198,7 +197,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure area-label="Fjerde kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 4">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -207,7 +206,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure area-label="Femte kunde-tilbakemelding">
                     <img src="img/AiMann.png" alt="Reviewer 5">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -216,7 +215,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure area-label="Sjette kunde-tilbakemelding">
                     <img src="img/AiMann.png" alt="Reviewer 6">
                     <figcaption>
                         <h3>Ola Normann</h3>
