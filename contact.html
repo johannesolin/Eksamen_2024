@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Starter HTML-dokumentet og angir språket -->
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Grunnleggende metadata for siden -->
     <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
     <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
     <meta name="author" content="DineBriller.no"> 
     <title>Kontakt</title>
+    <!-- Kobler til CSS-filer og eksterne ressurser -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,9 +20,11 @@
 </head>
 
 <body>
+    <!--Header og navigasjon på hjemsiden-->
     <header class="main-header">
+        <!-- Toppseksjon med logo, navigasjon og søk -->
         <!-- Lagt til aria-label for bedre tilgjengelighet -->
-        <a class="logo" href="index.html" area-label="Hjem til DineBriller.no">
+        <a class="logo" href="index.html" aria-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
         </a>
         <nav class="nav-links" aria-label="Primær navigasjon">
@@ -28,32 +34,36 @@
             <a href="contact.html">Kontakt</a>
         </nav>
 
+        <!-- Søkeboks og knapper for handlekurv og meny -->
         <!-- Lagt til aria-label på søkeboksen -->
-        <label class="search-box" area-label="Søk etter produkter"></i>
+        <label class="search-box" aria-label="Søk etter produkter"></i>
         </label>
 
+        <!--Resten av navigeringen-->
         <div class="header-buttons">
         <!-- Lagt til aria-label for spesifikke knapper -->
             <a href="./checkout.html" class="shopping-cart" aria-label="Gå til handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <span class="hamburger" onclick="openMenu()" area-label="Åpne meny">
+            <span class="hamburger" onclick="openMenu()" aria-label="Åpne meny">
                 <i class="fas fa-bars"></i>
             </span>
-            <span class="close-btn" onclick="closeMenu()" area-label="Lukke meny">
+            <span class="close-btn" onclick="closeMenu()" aria-label="Lukke meny">
                 <i class="fa-solid fa-xmark"></i>
             </span>
         </div>
     </header>
 
-        <!--Lagt til Area attributtert for SEO i main-->
+        <!--Hovedinnnhold i kontaktsiden-->
+        <!--Lagt til aria attributtert for SEO i main-->
     <main class="checkout-container">
         <header class="page-header">
             <h1>Kontaktside</h1>
         </header>
 
-        <!--Area atributter for nyhetsbrev / persondata-->
-        <form class="personal-data-form" area-label="Nyhetsbrev">
+        <!--Kontaktinfo for nyhetsbrev-->
+        <!--aria atributter for nyhetsbrev / persondata-->
+        <form class="personal-data-form" aria-label="Nyhetsbrev">
             <h2>Meld deg på vårt nyhetsbrev</h2>
             <fieldset class="personal-data-row">
                 <p><label>Fornavn<input type="text" placeholder="Ola"></label></p>
@@ -64,8 +74,9 @@
             <button type="submit">Meld deg på!</button>
         </form>
 
-        <!--Area attributter for kontakt oss-->
-        <section class="delivery-options" area-label="Persondata-kontakt-oss">
+        <!--Kontaktinfo for persondata-->   
+        <!--aria attributter for kontakt oss-->
+        <section class="delivery-options" aria-label="Persondata-kontakt-oss">
             <form class="personal-data-form">
                 <h2>Kom i kontakt med oss</h2>
                 <fieldset class="personal-data-row">
@@ -78,11 +89,12 @@
             </form>
         </section>
 
+        <!--Til toppen knapp-->
         <a href="#" id="go-to-top">Til Toppen</a>
-        <a href="index.html#popular-products" class="skip-to-content" tabindex="-1">Skip til Innhold</a>
 
     </main>
 
+    <!-- Footer med kontaktinformasjon og snarveier -->
     <footer>
         <!-- Resten av footer med tilgjengelighetsforbedringer -->
         <section class="logo-preamble" aria-labelledby="footer-logo">
@@ -120,6 +132,10 @@
 
     </footer>
 
+    <!-- Kobler til JavaScript-filen for navigering - lært en del JavaScript i Innføring i programmering
+         derfor velger jeg å implementere litt av dette inn i denne oppgaven, for å vise en alternativ måte å løse 
+         navigering på.
+    -->
     <script src="script.js"></script>
 </body>
 

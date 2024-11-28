@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Starter HTML-dokumentet og angir språket -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Grunnleggende metadata for siden -->
     <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
     <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
     <meta name="author" content="DineBriller.no">    
     <title>Hjemside</title>
+    <!-- Kobler til CSS-filer og eksterne ressurser -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -16,8 +19,9 @@
 </head>
 
 <body>
-
+<!--Header og navigasjon på hjemsiden-->
     <header class="main-header">
+        <!-- Toppseksjon med logo, navigasjon og søk -->
         <!-- Lagt til aria-label for bedre tilgjengelighet -->
         <a class="logo" aria-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
@@ -36,6 +40,7 @@
         </label>
 
         <div class="header-buttons">
+        <!-- Handlingsknapper i toppmenyen -->
         <!-- Lagt til aria-label for spesifikke knapper -->
             <a href="./checkout.html" class="shopping-cart" aria-label="Gå til handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -49,6 +54,7 @@
         </div>
     </header>
 
+    <!-- Hovedinnhold: Bannere og seksjoner -->
     <main>
         <section class="banner">
             <div class="banner-content">
@@ -58,20 +64,22 @@
         </section>
 
         <section id="popular-products" class="content-section">
+        <!-- Seksjon for populære produkter -->
         <!-- Lagt til aria-labelledby/label for bedre semantikk -->
             <h2>Våre mest populære pordukter</h2>
             <p>Oppdag det beste av det beste</p>
             <nav class="filter-buttons" aria-label="Filtrer produkter">
                 <button aria-label="Vis nye produkter">Nytt Produkt</button>
                 <button aria-label="Vis tilbudsprodukter">Tilbud</button>
-                <button aria-label="Vis bestselgere">Best Selgere</button>
+                <button aria-label="Vis bestselgere">Bestselgere</button>
             </nav>
             <div class="product-cards">
-            <!-- Lagt til area-labels for produktbilder -->
+            <!-- Produktkort for individuelle produkter -->
+            <!-- Lagt til aria-labels for produktbilder -->
                 <a href="./product.html" class="product-card">
-                    <img src="img/zign-briller.png" alt="Product 1" area-label="Bildet til første produkt">
+                    <img src="img/zign-briller.png" alt="Product 1" aria-label="Bildet til første produkt">
                     <article class="product-information">
-                        <h3 class="product-name" area-label="Produktnavn">Zign  UNISEX - Solbriller</h3>
+                        <h3 class="product-name" aria-label="Produktnavn">Zign  UNISEX - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -79,10 +87,11 @@
                         </p>
                     </article>
                 </a>
+                <!-- Flere produktkort følger samme struktur -->
                 <a href="./product.html" class="product-card">
-                    <img src="img/Even&Odd-briller.png" alt="Product 2" area-label="Bildet til andre produkt">
+                    <img src="img/Even&Odd-briller.png" alt="Product 2" aria-label="Bildet til andre produkt">
                     <article class="product-information">
-                        <h3 class="product-name" area-label="Produktnavn til produkt nr.2">Even&Odd - Solbriller</h3>
+                        <h3 class="product-name" aria-label="Produktnavn til produkt nr.2">Even&Odd - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -91,9 +100,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Only&Sons.png" alt="Product 3" area-label="Bildet til tredje produkt">
+                    <img src="img/Only&Sons.png" alt="Product 3" aria-label="Bildet til tredje produkt">
                     <article class="product-information">
-                        <h3 class="product-name" area-label="Produktnavn til produkt nr.3">Only & Sons ONSROY BATMAN - Solbriller</h3>
+                        <h3 class="product-name" aria-label="Produktnavn til produkt nr.3">Only & Sons ONSROY BATMAN - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -102,9 +111,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Even&Odd1.png" alt="Product 4" area-label="Bildet til fjerde produkt">
+                    <img src="img/Even&Odd1.png" alt="Product 4" aria-label="Bildet til fjerde produkt">
                     <article class="product-information">
-                        <h3 class="product-name" area-label="Produktnavn til produkt nr.4">Even&Odd Solbriller</h3>
+                        <h3 class="product-name" aria-label="Produktnavn til produkt nr.4">Even&Odd Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -113,9 +122,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Jack&Jones.png" alt="Product 5" area-label="Bildet til femte produkt">
+                    <img src="img/Jack&Jones.png" alt="Product 5" aria-label="Bildet til femte produkt">
                     <article class="product-information">
-                        <h3 class="product-name" area-label="Produktnavn til produkt nr.5">Jack & Jones - Solbriller</h3>
+                        <h3 class="product-name" aria-label="Produktnavn til produkt nr.5">Jack & Jones - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -124,9 +133,9 @@
                     </article>
                 </a>
                 <a href="./product.html" class="product-card">
-                    <img src="img/Even&Odd2.png" alt="Product 6" area-label="Bildet til siste produkt">
+                    <img src="img/Even&Odd2.png" alt="Product 6" aria-label="Bildet til siste produkt">
                     <article class="product-information">
-                        <h3 class="product-name" area-label="PRoduktnavn til siste produkt">Even&Odd - Solbriller</h3>
+                        <h3 class="product-name" aria-label="PRoduktnavn til siste produkt">Even&Odd - Solbriller</h3>
                         <p>200 NOK</p>
                         <p class="product-rating">
                             <span class="stars" aria-label="4 av 5 stjerner">★★★★☆</span>
@@ -137,6 +146,7 @@
             </div>
         </section>        
         
+        <!-- Seksjon for populære kategorier -->
         <!-- Gjentakelser for andre kategorier -->
         <section id="popular-categories" class="content-section" aria-labelledby="Kateogir-Header">
             <h2>Våre mest populære kategorier</h2>
@@ -165,12 +175,14 @@
             </aside>
         </section>
 
+        <!-- Seksjon for kundeanmeldelser -->
         <section id="reviews" class="content-section">
             <h2>Anmeldelser</h2>
             <p>Deres flotte anmeldelser vises her</p>
             <div class="review">
-            <!-- Lagt til area og strukturert innhold for anmeldelser -->
-                <figure area-label="Første kunde-tilbakemelding">
+            <!-- Kundeanmeldelser med bilder og tekst -->
+            <!-- Lagt til aria og strukturert innhold for anmeldelser -->
+                <figure aria-label="Første kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 1">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -179,7 +191,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure area-label="Andre kunde-tilbakemelding">
+                <figure aria-label="Andre kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 2">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -188,7 +200,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure area-label="Tredje kunde-tilbakemelding">
+                <figure aria-label="Tredje kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 3">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -197,7 +209,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure area-label="Fjerde kunde-tilbakemelding">
+                <figure aria-label="Fjerde kunde-tilbakemelding">
                     <img src="img/Aimann.png" alt="Reviewer 4">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -206,7 +218,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure area-label="Femte kunde-tilbakemelding">
+                <figure aria-label="Femte kunde-tilbakemelding">
                     <img src="img/AiMann.png" alt="Reviewer 5">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -215,7 +227,7 @@
                             neque cumque nam quis ullam reiciendis voluptate excepturi!</p>
                     </figcaption>
                 </figure>
-                <figure area-label="Sjette kunde-tilbakemelding">
+                <figure aria-label="Sjette kunde-tilbakemelding">
                     <img src="img/AiMann.png" alt="Reviewer 6">
                     <figcaption>
                         <h3>Ola Normann</h3>
@@ -227,11 +239,14 @@
             </div>
         </section>
 
+        <!-- Knapp for å navigere til toppen av siden -->
         <a href="#" id="go-to-top">Til Toppen</a>
+        <!-- Knapp for å hoppe til hoved-innholdet -->
         <a href="index.html#popular-products" class="skip-to-content" tabindex="-1">Skip til Innhold</a>
 
     </main>
 
+    <!-- Footer med kontaktinformasjon og snarveier -->
     <footer id="footer">
     <!-- Resten av footer med tilgjengelighetsforbedringer -->
         <section class="logo-preamble" aria-labelledby="footer-logo">
@@ -257,6 +272,7 @@
             </ul>
         </section>
 
+        <!-- Sosiale medie-lenker -->
         <section class="social-media" aria-labelledby="footer-sosiale-medier">
             <h3>Sosiale Medier</h3>
             <ul>
@@ -269,6 +285,10 @@
 
     </footer>
 
+    <!-- Kobler til JavaScript-filen for navigering - lært en del JavaScript i Innføring i programmering
+         derfor velger jeg å implementere litt av dette inn i denne oppgaven, for å vise en alternativ måte å løse 
+         navigering på.
+    -->
     <script src="script.js"></script>
     
 </body>

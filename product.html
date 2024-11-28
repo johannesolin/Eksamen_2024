@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Setter html5 for siden-->
 
 <head>
+    <!-- Grunnleggende metadata for SEO og responsiv design -->
+    <!-- Angir dokumentets tegnsett til UTF-8 for støtte av spesialtegn -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
     <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
     <meta name="author" content="DineBriller.no">    
     <title>Produktside</title>
+    <!-- Kobler til eksterne ressurser som CSS-filer og skrifttyper -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,12 +20,13 @@
 </head>
 
 <body>
+    <!-- Hovedheader med logo, navigasjonslenker og søkefelt -->
     <header class="main-header">
         <!-- Lagt til aria-label for bedre tilgjengelighet -->
         <a class="logo" href="index.html" aria-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
         </a>
-        <nav class="nav-links" area-label="Primær navigasjon">
+        <nav class="nav-links" aria-label="Primær navigasjon">
             <a href="index.html#popular-products">Produkter</a>
             <a href="index.html#popular-categories">Kategorier</a>
             <a href="index.html#reviews">Anmeldelser</a>
@@ -29,7 +34,7 @@
         </nav>
 
         <!-- Lagt til aria-label på søkeboksen -->
-        <label class="search-box" area-label="Søk etter produkter">
+        <label class="search-box" aria-label="Søk etter produkter">
             <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
             <i class="fa-solid fa-magnifying-glass"></i>
         </label>
@@ -39,16 +44,17 @@
             <a href="./checkout.html" class="shopping-cart" aria-label="Gå til handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <span class="hamburger" onclick="openMenu()" area-label="Åpne meny">
+            <span class="hamburger" onclick="openMenu()" aria-label="Åpne meny">
                 <i class="fas fa-bars"></i>
             </span>
-            <span class="close-btn" onclick="closeMenu()" area-label="Lukke meny">
+            <span class="close-btn" onclick="closeMenu()" aria-label="Lukke meny">
                 <i class="fa-solid fa-xmark"></i>
             </span>
         </div>
     </header>
 
-    <!--Lagt til Area attributtert for SEO i main-->
+    <!-- Hovedinnhold for produktdetaljer -->
+    <!--Lagt til aria attributtert for SEO i main-->
     <main class="product-container">
         <nav class="breadcrumb" aria-label="breadcrumb">
             <a href="index.html">Hjem</a>
@@ -88,12 +94,14 @@
                     </select>
                     <button class="buy-button" aria-label="Legg produkt i handlekurv">Legg i Handlekurv</button>
                     <ul class="product-specifications" aria-label="Spesifikasjoner for Zign UNISEX - Solbriller">
+                        <!-- Toggle-innhold for produktdetaljer -->
                         <li>
                             <h3 class="toggle-header" aria-label="100 Dagers åpent kjøp">100 Dager Åpent Kjøp<i class="fas fa-plus"></i></h3>
                             <p class="toggle-content">Hos oss har du 100 dagers angrerettt, du har altså 100 dager på deg om brillene ikke skulle
                                 falle i smak.
                             </p>
                         </li>
+                        <!-- Flere seksjoner for produktdetaljer -->
                         <li>
                             <h3 class="toggle-header">Produktdetaljer<i class="fas fa-plus"></i></h3>
                             <p class="toggle-content" aria-label="Produktdetaljer">
@@ -142,6 +150,7 @@
             </div>
         </section>
 
+        <!-- Seksjon for relaterte produkter -->
         <section class="related-product" aria-label="Relaterte produkter">
             <h2>Relaterte Produkter</h2>
             <div class="related-products" aria-label="Liste over relaterte produkter">
@@ -156,6 +165,7 @@
                         </p>
                     </article>
                 </figure>
+                <!-- Flere relaterte produkter -->
                 <figure class="product" aria-label="Relatert produkt: Even&Odd Solbriller">
                     <img src="img/Even&Odd-briller.png" alt="Product 2">
                     <article class="product-information">
@@ -214,11 +224,12 @@
             </div>
         </section>
 
+        <!-- Lenke til toppen av siden - knapp -->
         <a href="#" id="go-to-top">Til Toppen</a>
-        <a href="index.html#popular-products" class="skip-to-content" tabindex="-1">Skip til Innhold</a>
 
     </main>
 
+    <!-- Footer med kontaktinformasjon og snarveier -->
     <footer id="footer">
         <!-- Resten av footer med tilgjengelighetsforbedringer -->
             <section class="logo-preamble" aria-labelledby="footer-logo">
@@ -256,6 +267,10 @@
     
         </footer>
     
+     <!-- Kobler til JavaScript-filen for navigering - lært en del JavaScript i Innføring i programmering
+         derfor velger jeg å implementere litt av dette inn i denne oppgaven, for å vise en alternativ måte å løse 
+         navigering på.
+    -->
         <script src="script.js"></script>
         
     </body>

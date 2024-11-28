@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Starter HTML-dokumentet og angir språket -->
 
 <head>
 <!--Metadata som forbedrer tilgjenlighetsfunksjoner-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Grunnleggende metadata for siden -->
     <meta name="description" content="DineBriller.no - Oppdag solbriller som matcher din stil og ditt syn.">
     <meta name="keywords" content="solbriller, mote, stil, DineBriller.no">
     <meta name="author" content="DineBriller.no">    
     <title>Hanlekurv</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for bedre typografi -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for ikoner -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
+    <!-- Header: Inneholder logo, navigasjon, søk og brukerfunksjoner -->
     <!-- Lagt til aria-label for bedre tilgjengelighet -->
     <header class="main-header">
+        <!-- Logo og link til forsiden -->
         <a class="logo" href="index.html" aria-label="Hjem til DineBriller.no">
             <h1>DineBriller.<span>no</span></h1>
         </a>
+        <!-- Navigasjonslenker -->
         <nav class="nav-links" aria-label="Primær navigasjon">
             <a href="index.html#popular-products">Produkter</a>
             <a href="index.html#popular-categories">Kategorier</a>
@@ -29,6 +36,7 @@
             <a href="contact.html">Kontakt</a>
         </nav>
 
+        <!-- Søke- og brukerkontrollknapper -->
         <!-- Lagt til aria-label på søkeboksen -->
         <label class="search-box" aria-label="Søk etter Produkter">
             <input type="text" name="search" id="search" placeholder="Søk Etter Produkter">
@@ -49,14 +57,17 @@
         </div>
     </header>
 
-    <!--Lagt til Area attributtert for SEO i main-->
+    <!-- Hovedinnhold: Handlekurv og utsjekk -->
+    <!--Lagt til aria attributtert for SEO i main-->
     <main class="checkout-container">
         <header class="page-header">
             <h1>Kasse</h1>
         </header>
 
+        <!-- Handlekurvseksjon -->
         <section class="shopping-bag" aria-labelledby="Handlekurv-side">
             <h2>1. SHOPPINGBAGEN DIN</h2>
+            <!-- Produktkort i handlekurv -->
             <div class="product-bag-items">
                 <article class="product-bag-card">
                     <img src="img/zign-briller.png" alt="Product 1">
@@ -65,6 +76,7 @@
                         <p>Kvalitetsbriller fra Zign</p>
                         <p>Pris: 200 NOK</p>
                         <ul class="size-selection">
+                        <!-- Valg for størrelse og farge -->
                             <li>
                                 <label for="choose-size-1" class="choose-size">Brilleetui</label>
                                 <select name="choose-size" id="choose-size-1" aria-label="Velg størrelse på etui">
@@ -84,6 +96,7 @@
                         </ul>
                     </div>
                 </article>
+                <!-- Gjentakelse for flere produkter -->
                 <article class="product-bag-card">
                     <img src="img/Only&Sons.png" alt="Product 1">
                     <div class="product-details">
@@ -113,9 +126,11 @@
             </div>
         </section>
 
-        <!--Area atributter for personopplysninger-->
+        <!-- Personopplysningsskjema -->
+        <!--aria atributter for personopplysninger-->
         <form class="personal-data-form" aria-labelledby="Personopplysninger">
             <h2>2. DINE OPPLYSNINGER</h2>
+            <!-- Skjema for kontaktinfo -->
             <fieldset class="personal-data-row">
                 <p><label>Fornavn<input type="text" placeholder="Ola"></label></p>
                 <p><label>Etternavn<input type="text" placeholder="Normann"></label></p>
@@ -131,10 +146,13 @@
             </span>
         </form>
 
-        <!--Area attributter for leveringsalternativer-->
+        <!-- Leveringsalternativer -->
+        <!--aria attributter for leveringsalternativer-->
         <section class="delivery-options" aria-labelledby="delivery-options-title">
             <h2 class="delivery-title">3. LEVERINGSALTERNATIV</h2>
+            <!-- Leveringsvalg med alternativer -->
             <ul class="delivery-list">
+                <!-- Gjentatte leveringsalternativer -->
                 <li class="delivery-item">
                     <fieldset class="delivery-fieldset">
                         <label class="delivery-label">
@@ -186,7 +204,8 @@
             </ul>
         </section>
 
-        <!--Area attributter for betalingsinformasjon-->
+        <!-- Betalingsinformasjon -->
+        <!--aria attributter for betalingsinformasjon-->
         <form class="payment-form" aria-label="payment-title" >
             <h2>BETALING</h2>
             <label>Kortnummer <input type="text" placeholder="342342****4435"></label>
@@ -211,6 +230,7 @@
     </main>
 
     <footer>
+        <!-- Footer med kontaktinfo, snarveier og sosiale medier -->
         <!-- Resten av footer med tilgjengelighetsforbedringer -->
         <section class="logo-preamble" aria-labelledby="footer-logo">
             <h2>DineBriller.<span>no</span></h2>
