@@ -36,7 +36,8 @@
 
         <!-- Søkeboks og knapper for handlekurv og meny -->
         <!-- Lagt til aria-label på søkeboksen -->
-        <label class="search-box" aria-label="Søk etter produkter"></i>
+        <label> 
+            class="search-box" aria-label="Søk etter produkter">
         </label>
 
         <!--Resten av navigeringen-->
@@ -45,10 +46,10 @@
             <a href="./checkout.html" class="shopping-cart" aria-label="Gå til handlekurv">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <span class="hamburger" onclick="openMenu()" aria-label="Åpne meny">
+            <span class="hamburger" onclick="openMenu()" aria-label="Åpne meny i navigasjon">
                 <i class="fas fa-bars"></i>
             </span>
-            <span class="close-btn" onclick="closeMenu()" aria-label="Lukke meny">
+            <span class="close-btn" onclick="closeMenu()" aria-label="Lukke meny i navigasjon">
                 <i class="fa-solid fa-xmark"></i>
             </span>
         </div>
@@ -97,12 +98,12 @@
     <!-- Footer med kontaktinformasjon og snarveier -->
     <footer>
         <!-- Resten av footer med tilgjengelighetsforbedringer -->
-        <section class="logo-preamble" aria-labelledby="footer-logo">
+        <section class="logo-preamble" aria-label="footer-logo">
             <h2>DineBriller.<span>no</span></h2>
             <p>Solbriller som matcher din stil, ditt syn, og din hverdag!</p>
         </section>
 
-        <section class="contact" id="contact" aria-labelledby="footer-contact">
+        <section class="contact" id="contact" aria-label="footer-contact">
             <h3>Kontakt</h3>
             <p>HØGSKOLEN I ØSTFOLD<br>
                 B R A Veien 4, 1757 Halden<br>
@@ -110,7 +111,7 @@
                 Epost: serivcetorget@hiof.no</p>
         </section>
 
-        <section class="shortcuts" aria-labelledby="footer-snarveier">
+        <section class="shortcuts" aria-label="footer-snarveier">
             <h3>Snarveier</h3>
             <ul>
                 <li><a href="#about" aria-label="Gå til Om Oss">Om Oss</a></li>
@@ -120,7 +121,7 @@
             </ul>
         </section>
 
-        <section class="social-media" aria-labelledby="footer-sosiale-medier">
+        <section class="social-media" aria-label="footer-sosiale-medier">
             <h3>Sosiale Medier</h3>
             <ul>
                 <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk vår Instagram-side">Instagram</a></li>
