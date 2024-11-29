@@ -1,26 +1,31 @@
+/* Setter margin og padding til null og aktiverer border-box for all elementer */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Grunnstil for main */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #333;
 }
 
+/* Standard margin for overskrifter og avsnitt */
 h1,
 h2,
 p {
     margin: 10px 0;
 }
 
+/* Farge og marginjustering for H2 */
 h2 {
     margin: 5px 0;
     color: #1e3a8a;
 }
 
+/* Sentraliserte hovedområder */
 .main-header,
 footer,
 main {
@@ -29,6 +34,8 @@ main {
     margin: 0 auto;
 }
 
+
+/* Fiksert header-stil */
 .main-header {
     position: fixed;
     background: #ffffff;
@@ -45,6 +52,7 @@ main {
     margin: 0 auto;
 }
 
+/* Logo og navigering */
 .logo {
     text-decoration: none;
 }
@@ -108,6 +116,7 @@ main {
     border: none;
 }
 
+/* Hamburgermeny */
 .hamburger,
 .close-btn {
     display: none;
@@ -141,11 +150,13 @@ main {
     padding: 10px 40px;
 }
 
+/* Produktkort */
 .content-section {
     padding: 3rem 1.5rem;
     text-align: center;
 }
 
+/* Filtrer - Knapper */
 .filter-buttons button {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
@@ -164,6 +175,7 @@ main {
     background-color: rgb(150, 150, 150);
 }
 
+/* Produktkort */
 .product-cards,
 .review {
     display: flex;
@@ -190,6 +202,7 @@ main {
     overflow: hidden;
 }
 
+/* Produkt-tilbakemeldinger */
 .review {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -234,6 +247,7 @@ main {
     margin: 0;
 }
 
+/* Kategorikort */
 .category-cards {
     width: 100%;
     margin: 0 auto;
@@ -271,7 +285,7 @@ main {
     width: 28%;
 }
 
-
+/* Div for produktinformasjon og mer */
 .product-container {
     padding: 10px;
 }
@@ -402,8 +416,7 @@ main {
     margin: 0;
 }
 
-
-
+/* Produktinformasjon */    
 .toggle-header {
     cursor: pointer;
     display: flex;
@@ -487,6 +500,7 @@ main {
     color: #ccc;
 }
 
+/* Handlekurv */
 .checkout-container .shopping-bag,
 .checkout-container form,
 .checkout-container .delivery-options {
@@ -583,6 +597,7 @@ input[type="text"] {
 
 }
 
+/* Personlig informasjon */
 .personal-data-row,
 .card-row {
     display: flex;
@@ -602,6 +617,7 @@ input[type="text"] {
     margin: 0;
 }
 
+/* Leveringsalternativer/ Knapper */
 .cancel-order {
     display: flex;
     justify-content: center;
@@ -664,6 +680,7 @@ input[type="text"] {
     font-weight: bolder;
 }
 
+/* Kontakt oss */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -691,7 +708,7 @@ input[type="text"] {
     margin: 0 10px 0 0;
 }
 
-
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -743,6 +760,7 @@ footer ul li a:hover {
 }
 
 
+/* Til toppen-knapp */
 #go-to-top {
     position: fixed;
     bottom: 20px;
@@ -753,6 +771,9 @@ footer ul li a:hover {
     border-radius: 5px;
     text-decoration: none;
   }
+
+
+  /* Skip til innhold-knapp */
   .skip-to-content {
     position: absolute;
     top: 10px;
@@ -771,7 +792,7 @@ footer ul li a:hover {
   }
 
 
-
+/* Bestemmer hvordan nettsiden skal se ut på ulike skjermstørrelser, mobilskjerm. Som i eksamensteksten */
 @media (max-width: 840px) {
     .search-box input {
         width: 140px;
@@ -782,6 +803,7 @@ footer ul li a:hover {
     }
 }
 
+/* Resten av mobilskjerm med css for at ting skal samhandle på en god måte */
 @media (max-width: 768px) {
 
     main {
